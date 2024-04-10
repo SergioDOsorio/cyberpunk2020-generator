@@ -8,7 +8,7 @@ export default function NpcGenerator() {
                 <div className='container-menu'>
                     <img src={Logo} alt="Javascript logo" className='logo' />
                     <div className='container-options'>
-                        <h1>NPC Generator</h1>
+                        <h1>NPC GENERATOR</h1>
                         <div className='config'>
                             <div >
                                 <h2>Number of NPCs</h2>

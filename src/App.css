@@ -17,7 +17,9 @@ body main .bg {
     font-family: "Orbitron", sans-serif;
     padding: 20px 20px 20px 0; }
     body main .bg .main-container .container-menu {
-      display: flex; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       body main .bg .main-container .container-menu img {
         width: 30%; }
       body main .bg .main-container .container-menu .container-options {
@@ -29,14 +31,18 @@ body main .bg {
         gap: 20px; }
         body main .bg .main-container .container-menu .container-options h1 {
           color: #FF0000;
-          font-size: 40px; }
+          font-size: 40px;
+          font-family: "Orbitron", sans-serif; }
         body main .bg .main-container .container-menu .container-options .config {
           display: flex;
           width: 100%;
-          justify-content: space-around; }
+          justify-content: space-around;
+          flex-wrap: wrap; }
           body main .bg .main-container .container-menu .container-options .config div {
             display: flex;
             gap: 5px; }
+            body main .bg .main-container .container-menu .container-options .config div h2 {
+              font-size: 25px; }
             body main .bg .main-container .container-menu .container-options .config div select {
               background-color: #60697800;
               color: #D0D3D7;
