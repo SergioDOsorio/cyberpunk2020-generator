@@ -7,48 +7,40 @@
 body main .bg {
   display: flex;
   justify-content: center;
-  background-color: #60697800; }
+  background-color: #60697800;
+  align-items: center;
+  height: 100vh; }
   body main .bg .main-container {
     width: 1024px;
     background-color: #2e333a;
-    display: flex;
     color: #D0D3D7;
-    font-family: "Orbitron", sans-serif; }
+    font-family: "Orbitron", sans-serif;
+    padding: 20px 20px 20px 0; }
     body main .bg .main-container .container-menu {
-      display: flex;
-      width: 35%;
-      flex-direction: column;
-      padding: 10px;
-      gap: 10px;
-      border-right: solid 2px #fe0101dd; }
-      body main .bg .main-container .container-menu .logo {
-        width: 100%; }
-      body main .bg .main-container .container-menu div {
+      display: flex; }
+      body main .bg .main-container .container-menu img {
+        width: 30%; }
+      body main .bg .main-container .container-menu .container-options {
+        width: 70%;
         display: flex;
-        justify-content: space-between; }
-        body main .bg .main-container .container-menu div h2 {
-          font-size: 20px; }
-        body main .bg .main-container .container-menu div select {
-          color: #D0D3D7;
-          background-color: #2e3239;
-          border: 2px solid #fe0101dd;
-          font-family: "Orbitron", sans-serif;
-          border-radius: 5px;
-          padding: 0 5px 0 5px; }
-      body main .bg .main-container .container-menu .container-btn {
-        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center; }
-        body main .bg .main-container .container-menu .container-btn button {
-          color: #D0D3D7;
-          border: 2px solid #fe0101dd;
-          font-family: "Orbitron", sans-serif;
-          background-color: #2e3239;
-          border-radius: 5px;
-          padding: 0 5px 0 5px;
-          font-size: 26px; }
-    body main .bg .main-container .container-result {
-      width: 65%; }
+        text-align: center;
+        gap: 20px; }
+        body main .bg .main-container .container-menu .container-options h1 {
+          color: #FF0000;
+          font-size: 40px; }
+        body main .bg .main-container .container-menu .container-options .config {
+          display: flex;
+          width: 100%;
+          justify-content: space-around; }
+          body main .bg .main-container .container-menu .container-options .config div {
+            display: flex;
+            gap: 5px; }
+            body main .bg .main-container .container-menu .container-options .config div select {
+              background-color: #60697800;
+              color: #D0D3D7;
+              font-family: "Orbitron", sans-serif; }
 
 body main #particles-js {
   background-color: black;

@@ -12,64 +12,46 @@ body {
             display: flex;
             justify-content: center;
             background-color: #60697800;
+            align-items: center;
+            height: 100vh;
 
             .main-container {
                 width: 1024px;
                 background-color: #2e333a;
-                display: flex;
                 color: #D0D3D7;
                 font-family: "Orbitron", sans-serif;
-                ;
-
-                .container-menu {
+                padding: 20px 20px 20px 0;
+                .container-menu{
                     display: flex;
-                    width: 35%;
-                    flex-direction: column;
-                    padding: 10px;
-                    gap: 10px;
-                    border-right: solid 2px #fe0101dd;
-
-                    .logo {
-                        width: 100%;
+                    img{
+                        width: 30%;
                     }
-
-                    div {
+                    .container-options{
+                        width: 70%;
                         display: flex;
-                        justify-content: space-between;
-
-                        h2 {
-                            font-size: 20px;
-                        }
-
-                        select {
-                            color: #D0D3D7;
-                            background-color: #2e3239;
-                            border: 2px solid #fe0101dd;
-                            font-family: "Orbitron", sans-serif;
-                            border-radius: 5px;
-                            padding: 0 5px 0 5px;
-                        }
-                    }
-
-                    .container-btn {
-                        display: flex;
+                        flex-direction: column;
                         justify-content: center;
-                        align-items: center;
-
-                        button {
-                            color: #D0D3D7;
-                            border: 2px solid #fe0101dd;
-                            font-family: "Orbitron", sans-serif;
-                            background-color: #2e3239;
-                            border-radius: 5px;
-                            padding: 0 5px 0 5px;
-                            font-size: 26px;
+                        text-align: center;
+                        gap: 20px;
+                        h1{
+                            color: #FF0000;
+                            font-size: 40px;
+                        }
+                        .config{
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-around;
+                            div{
+                                display: flex;
+                                gap: 5px;
+                                select{
+                                    background-color: #60697800;
+                                    color: #D0D3D7;
+                                    font-family: "Orbitron", sans-serif;
+                                }
+                            }
                         }
                     }
-                }
-
-                .container-result {
-                    width: 65%;
                 }
             }
         }
