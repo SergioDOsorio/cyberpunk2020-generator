@@ -1,5 +1,6 @@
 import '../App.css';
 import Logo from '../img/Logo.png';
+import Npc from '../components/Npc';
 
 export default function NpcGenerator() {
     return (
@@ -25,22 +26,39 @@ export default function NpcGenerator() {
                             <div>
                                 <h2>Threat level</h2>
                                 <select name="" id="">
+                                    <option value="">Any</option>
                                     <option value="">Inoffensive</option>
                                     <option value="">Regular</option>
                                     <option value="">Problematic</option>
                                     <option value="">Threatening</option>
                                 </select>
                             </div>
+                            <div>
+                                <h2>Role</h2>
+                                <select name="" id="">
+                                    <option value="">Any</option>
+                                    <option value="">Rocker</option>
+                                    <option value="">Mercenary</option>
+                                    <option value="">Netrunner</option>
+                                    <option value="">Technician</option>
+                                    <option value="">Journalis</option>
+                                    <option value="">Cop</option>
+                                    <option value="">Executive</option>
+                                    <option value="">Fixer</option>
+                                    <option value="">Nomad</option>
+                                </select>
+                            </div>
                         </div>
                         <button>Generate</button>
                     </div>
-
-
                 </div>
+                <hr />
                 <div className='container-result'>
-                    <div>
-                        Hola
-                    </div>
+                    <Npc></Npc>
+                    <Npc></Npc>
+                    
+
+                    
                 </div>
             </div>
         </ >

@@ -33,7 +33,7 @@ var pJS = function (tag_id, params) {
         type: 'circle',
         stroke: {
           width: 0,
-          color: "#000000"
+          color: "#C6C6C6"
         },
         polygon: {
           nb_sides: 5

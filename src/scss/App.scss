@@ -12,58 +12,296 @@ body {
         .bg {
             display: flex;
             justify-content: center;
-            background-color: #60697800;
-            align-items: center;
-            height: 100vh;
 
             .main-container {
                 width: 1024px;
-                background-color: #2e333a;
+                background-color: #393939;
                 color: #D0D3D7;
                 font-family: "Orbitron", sans-serif;
-                padding: 20px 20px 20px 0;
-                .container-menu{
+                padding: 20px 20px 20px 20px;
+                margin: 10vh 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .container-menu {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    img{
+                    gap: 20px;
+
+                    img {
                         width: 30%;
                     }
-                    .container-options{
+
+                    .container-options {
                         width: 70%;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        text-align: center;
-                        gap: 20px;
-                        h1{
+                        border-left: 3px solid #FF0000;
+                        gap: 0px;
+                        align-items: center;
+
+                        h1 {
                             color: #FF0000;
-                            font-size: 40px;
+                            font-size: 30px;
                             font-family: "Orbitron", sans-serif;
                         }
-                        .config{
+
+                        .config {
                             display: flex;
                             width: 100%;
-                            justify-content: space-around;
                             flex-wrap: wrap;
-                            div{
+                            padding: 0 80px;
+                            gap: 10px;
+
+                            div {
                                 display: flex;
                                 gap: 5px;
-                                h2{
-                                    font-size: 25px;
+
+                                h2 {
+                                    font-size: 18px;
                                 }
-                                select{
-                                    background-color: #60697800;
+
+                                select {
+                                    background-color: #2e333a;
                                     color: #D0D3D7;
                                     font-family: "Orbitron", sans-serif;
+                                    border-radius: 5px;
+                                    border: solid 2px #FF0000;
+
+
                                 }
                             }
                         }
+
+                        button {
+                            width: 20%;
+                            background-color: #ff000097;
+                            color: #D0D3D7;
+                            font-family: "Orbitron", sans-serif;
+                            border-radius: 5px;
+                            border: solid 2px #ff000060;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                hr {
+                    border: solid 2px #FF0000;
+                }
+
+                .container-result {
+                    display: flex;
+                    justify-content: center;
+                    padding: 40px 0;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    text-align: center;
+
+                    .container-npc {
+                        height: 98%;
+                        background-color: #D0D3D7;
+                        color: #2e333a;
+                        width: 45%;
+                        font-size: 16px;
+                        padding: 10px 5px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        border: 5px solid black;
+
+                        .section-name {
+                            display: flex;
+                            gap: 5px;
+
+                            .label-name {
+                                background-color: #2e333a;
+                                color: #D0D3D7;
+                                padding: 0 4px;
+                                width: 20%;
+                            }
+
+                            #name {
+                                border: solid 1px #2e333a;
+                                width: 80%;
+                                padding-left: 5px;
+                            }
+                        }
+
+                        .section-char {
+                            .label-char {
+                                background-color: #2e333a;
+                                color: #D0D3D7;
+                                padding: 0 4px;
+                                margin-bottom: 5px;
+                            }
+
+                            div {
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                .char {
+                                    display: flex;
+                                    width: 25%;
+
+                                    p {
+                                        width: 70%;
+
+                                    }
+
+                                    div {
+                                        width: 30%;
+                                        border: solid 1px #2e333a;
+                                    }
+                                }
+                            }
+                        }
+
+                        .section-armor {
+                            display: flex;
+                            font-size: 12px;
+
+                            .label-armor {
+                                width: 23%;
+
+                                div {
+                                    border: solid 1px #D0D3D7;
+                                    background-color: #2e333a;
+                                    color: #D0D3D7;
+                                    padding: 2px 4px;
+                                }
+
+                            }
+
+                            .armor {
+                                width: 77%;
+
+                                .label-body {
+                                    display: flex;
+                                    width: 100%;
+                                    font-size: 12px;
+
+                                    div {
+                                        background-color: #2e333a;
+                                        color: #D0D3D7;
+                                        padding: 2px 4px;
+                                        border: solid 0.5px #D0D3D7;
+                                        width: 17%;
+
+                                    }
+                                }
+
+                                .value {
+                                    display: flex;
+                                    gap: 2px;
+
+                                    div {
+
+                                        background-color: #D0D3D7;
+                                        color: #2e333a;
+                                        padding: 2px 4px;
+                                        border: solid 0.5px #2e333a;
+                                        width: 17%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .section-health {
+                            display: flex;
+                            gap: 3px;
+
+
+                            .salvation {
+
+                                .white-label {
+                                    border: solid 2px #2e333a;
+                                    padding: 0 3px;
+                                    height: 40%;
+
+                                }
+
+                                .value {
+                                    border: solid 2px #2e333a;
+                                    height: 60%;
+                                    
+                                }
+                            }
+
+                            .BTM {
+
+
+                                .white-label {
+                                    border: solid 2px #2e333a;
+                                    padding: 0 3px;
+                                    height: 40%;
+
+                                }
+
+                                .value {
+                                    border: solid 2px #2e333a;
+                                    height: 60%;
+                                    
+                                }
+                            }
+
+                            .health {
+
+
+                                .white-label {
+                                    border: solid 2px #2e333a;
+                                    padding: 0 3px;
+                                    height: 40%;
+
+                                }
+
+                                .value {
+                                    border: solid 2px #2e333a;
+                                    height: 60%;
+                                    
+                                }
+                            }
+
+                            .plot-hook {
+                                .white-label {
+                                    text-align: center;
+                                    border: solid 2px #2e333a;
+                                    padding: 0 3px;
+                                    background-color: #2e333a;
+                                    color: #D0D3D7;
+                                }
+
+                                div {
+                                    text-align: start;
+                                    border: solid 2px #2e333a;
+                                    font-size: 14px;
+                                    padding: 0 2px;
+                                    line-height: 1.5;
+                                }
+                            }
+
+                        }
+
+                        .text-field {
+                            text-align: start;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            border: 2px solid #2e333a;
+                            padding: 5px;
+                        }
+
                     }
                 }
             }
+
+
         }
-        #particles-js{
+
+        #particles-js {
             background-color: black;
             position: fixed;
             width: 100%;
